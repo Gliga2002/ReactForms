@@ -12,6 +12,12 @@ export default function Login() {
     event.preventDefault();
 
     console.log(enteredValue);
+    // Reseting input fields via state
+    // Alternative use reset button type (not programatically)
+    setEnteredValue({
+      email: '',
+      password: '',
+    });
   }
 
   function handleInputChange(identifier, event) {

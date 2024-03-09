@@ -11,6 +11,11 @@ export default function Login() {
     const enteredPassword = password.current.value;
 
     console.log({ enteredEmail, enteredPassword });
+
+    // Reseting input fields via ref (imperative code, updating DOM)
+    // Alternative use reset button type (not programatically)
+    email.current.value = '';
+    password.current.value = '';
   }
 
   return (

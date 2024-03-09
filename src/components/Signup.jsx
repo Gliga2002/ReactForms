@@ -8,6 +8,11 @@ export default function Signup() {
     const data = Object.fromEntries(fd.entries());
     data.acquisition = acquisitionChannel;
     console.log(data);
+
+    // Reseting input fields via form reset method (imperative code - manje nego reseting all those ref values manually) - do the same as reset button
+    // Alternative use reset button type (not programatically)
+    // SIDENOT: Nije zeleo ovde da je reset, ali je hteo cisto da ti pokaze nacin
+    // event.target.reset();
   }
 
   return (
